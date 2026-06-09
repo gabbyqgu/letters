@@ -4,21 +4,69 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
+html, body {
+    width: 100vw; /* relative to size of SCREEN; 100% of total width*/
     height: 100vh;
     overflow: hidden;
 }
 
-.decor {
+#home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills entire box even if it gets cropped */
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: 0;
+}
+
+/* ========= HOMEPAGE DECORATIONS ============== */
+.decor { /* all decorations are added to this class to make the position absolute */
     position: absolute; 
-    /* with an absolute position, you can move things with top/L/R/bottom px */
+    /* with an absolute position, you can move things with top/L/R/bottom px and the %s wherever u want */
     z-index: 2;
 }
 
-.text {
-    top: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20vw; /* ad
+.text { /* using % makes it relative to screen, wheras px is fixed */
+    top: 30px;
+    left: 50%; /* relative to PARENT: 50% across from left (centers left edge)*/
+    transform: translateX(-50%); /* makes it actually centered */
+    width: clamp(140px, 22%, 240px); 
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.text:hover {
+    transform: translateX(-50%) rotate(3deg) scale(1.05);
+}
+.bear-hug {
+    left: 12%;
+    top: 3%; 
+    width: clamp(100px, 16%, 170px);
+    /* clamp gives min/max size: clamp(min, scale%, max*/
+}
+
+.lace {
+    top: 0;
+    left: 0;
+    height: 65%;
+}
+
+.bottom-corner {
+    bottom: 0;
+    left: 0;
+    height: 50%;
+}
+
+.camera {
+    left: 20%;
+    top: 5%; 
+    width: clamp(100px, 16%, 170px);
+    rotate: -12deg;
 }
