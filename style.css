@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.decor {
+    position: absolute; 
+    /* with an absolute position, you can move things with top/L/R/bottom px */
+    z-index: 2;
+}
+
+.text {
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw; /* ad
+}
