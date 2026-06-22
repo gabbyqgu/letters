@@ -151,7 +151,7 @@ html, body {
 
 
 /* ===LETTERS (bro i hate this css naming) === */
-#letter {
+#letter-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -175,17 +175,45 @@ html, body {
     
 }
 
+#letter {
+    width: 100%; /* relative to parent(container) */
+    height: auto; 
+    display: block; /*default is inline(same row), block gets new line*/
+}
 #letter-text {
     position: absolute;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5%;
-    transform: translate(-70%, -70%);
+    font-size: clamp(8px, 1vw, 30px);
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
-    animation: fade 4s ease;
+    animation: fadeIn 4s ease;
+} 
+
+#letter-text a {
+    color: #9160da;
 }
 
-@keyframes fade {
-    from {
-        opacity: 0
-    }
+#letter-text a:hover {
+    color: #5820ad; 
+}
+
+
+#return-button {
+    position: fixed; /*like a button that doesn't move even if u scroll */
+    top: 25px;
+    left: 25px;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(190, 213, 240);
+    color: rgb(92, 108, 143);
+    text-decoration: none; /*removes underline*/
+    padding: 10px 20px; /*10px up down* 20px left right*/
+    transition: transform 0.3s ease; 
+}
+
+#return-button:hover {
+    transform: scale(1.05);
+    color:rgb(143, 92, 117);
 }
