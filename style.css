@@ -175,7 +175,7 @@ html, body {
     
 }
 
-#letter {
+#letter { /* u can use an id multiple times as long as its in diff files */
     width: 100%; /* relative to parent(container) */
     height: auto; 
     display: block; /*default is inline(same row), block gets new line*/
@@ -191,12 +191,34 @@ html, body {
     animation: fadeIn 4s ease;
 } 
 
-#letter-text a {
+#letter-text a { /*"a" references the link <a> (only that link)*/
     color: #9160da;
 }
 
 #letter-text a:hover {
     color: #5820ad; 
+}
+
+
+/*===== music playlist link =====*/
+#letter-text2 {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(8px, 1vw, 30px);
+    top: 40%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    animation: fadeIn 4s
+}
+
+#letter-text2 a {
+    color:rgb(97, 143, 241);
+}
+
+#letter-text2 a:hover {
+    color:rgb(113, 207, 95)
 }
 
 
