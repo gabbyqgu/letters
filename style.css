@@ -221,6 +221,20 @@ html, body {
     color:rgb(113, 207, 95)
 }
 
+/*== 3rd link */
+
+#letter-text3 {
+    position: absolute;
+    color: rgb(143, 92, 117);
+    font-family:'Courier New', Courier, monospace;
+    font-size: clamp(8px, 1.2vw, 50px);
+    top: 50%;
+    left: 44%;
+}
+
+#letter-text3:hover {
+    color: rgb(95, 153, 207);
+}
 
 #return-button {
     position: fixed; /*like a button that doesn't move even if u scroll */
@@ -285,3 +299,21 @@ html, body {
     height: 40%;
     z-index: 0; 
 }
+
+.love-cat {
+    top: 5%;
+    right: 0%;
+    height: 40%;
+}
+.duck {
+    top: 10%;
+    right: 8%;
+    height: 34%
+}
+
+.laugh-cat {
+    bottom: 30%;
+    left: 10%;
+    height: 20%;
+}
+
