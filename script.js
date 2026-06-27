@@ -25,4 +25,18 @@ draggables.forEach(function(draggable) {
 
 });
 
+/*=====oooo spooky dissapearing text ====*/
+const button = document.querySelectorAll(".reveal-btn"); /* put the btn into the variable button, query returns list */
+button.forEach(function(button) {
+    button.addEventListener("click", function() {
+        const message = button.nextElementSibling;
+        if (message.style.display === "block") { /* is the display block(box)? if yes then the code runs */
+            message.style.display = "none"; /* hide it!*/ 
+        }
+        else {
+            message.style.display = "block";
+        }
+});
+
+});
 

@@ -236,6 +236,15 @@ html, body {
     color: rgb(95, 153, 207);
 }
 
+#letter-text4 {
+    position: absolute;
+    font-family:'Courier New', Courier, monospace;
+    font-size: clamp(8px, 0.8vw, 28px);
+    width: 33%;
+    top: 37%;
+    left: 28%;
+}
+
 #return-button {
     position: fixed; /*like a button that doesn't move even if u scroll */
     top: 25px;
@@ -316,4 +325,18 @@ html, body {
     left: 10%;
     height: 20%;
 }
+
+.secret-message {
+    display: none;
+    color: rgb(201, 119, 119);
+}
+
+.reveal-btn{
+    cursor: pointer;
+}
+
+.reveal-btn:hover{
+    color: rgb(147, 60, 60); 
+}
+
 
