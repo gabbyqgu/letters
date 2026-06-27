@@ -180,6 +180,8 @@ html, body {
     height: auto; 
     display: block; /*default is inline(same row), block gets new line*/
 }
+
+/*==========ALL THE LETTER TEXT ==========*/
 #letter-text {
     position: absolute;
     font-family: 'Courier New', Courier, monospace;
@@ -263,7 +265,7 @@ html, body {
     color:rgb(143, 92, 117);
 }
 
-/*==== BDAY CARD DRAGGABLE THINGIES ==*/
+/*==== BDAY CARD DRAGGABLE THINGIES ======*/
 
 .racoon {
     bottom: 50%;
@@ -326,6 +328,8 @@ html, body {
     height: 20%;
 }
 
+
+/*===OOOOOH so secret message ====*/
 .secret-message {
     display: none;
     color: rgb(201, 119, 119);
